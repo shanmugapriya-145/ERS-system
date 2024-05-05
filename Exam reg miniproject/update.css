@@ -1,0 +1,112 @@
+/* Registration Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif|PT+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f4f8; /* light blue */
+    color: #333; /* dark grey */
+    font-family: Arial, sans-serif; /* Changed font to Arial */
+}
+
+.mcontainer {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff; /* white */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+    padding: 30px;
+    text-align: center;
+}
+
+.myform {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* dark grey */
+    text-align: left;
+}
+
+.label.required:after {
+    content: '*';
+    margin-left: 4px;
+    color: #343132; /* pink */
+}
+
+input[type=text],
+input[type=date],
+input[type=phone],
+input[type=email],
+input[type=password],
+input[type=number] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #3c3a3b; /* pink */
+    background-color: #f0f4f8; /* light blue */
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=phone]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus {
+    border-bottom-color: #0d8050; /* green */
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 40%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0d8050; /* green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #0a6440; /* dark green */
+}
+
+.tit {
+    color: #030615; /* pink */
+    font-family: 'Arial', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.login_btn,
+.reset_btn {
+    width: 40%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff; /* blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login_btn:hover,
+.reset_btn:hover {
+    background-color: #0056b3; /* dark blue */
+}
